@@ -604,65 +604,8 @@
     "revises": null,
     "duplicate_of": null,
     "needs_review": true,
-    "review_reason": "List contains multiple typos and missing/ambiguous information (unreadable characters, unspecified tee size, ambiguous nipple length formatting, unclear '5j+s' for pipe joints). Attachment IMG_4172.jpeg may contain a clearer copy — confirm sizes, materials, thread type, pipe joint lengths (joints vs. feet), and pickup location/date if different than 'Friday'.",
-    "line_items": [
-      {
-        "raw": "8 - 2\" galv a0 elbow",
-        "description": "2\" galvanized elbow — presumed 90° (source text 'a0' appears to be a typo). Confirm degree (90°), material/finish (galvanized), and pressure rating.",
-        "qty": 8,
-        "uom": "EA",
-        "source": "body"
-      },
-      {
-        "raw": "4-.+tee",
-        "description": "Tee (size and material not specified in line). Confirm size (eg. 2\"), material (galvanized or other), pressure class, and type (equal/reducer).",
-        "qty": 4,
-        "uom": "EA",
-        "source": "body"
-      },
-      {
-        "raw": "6-1\"x3\"galv nipple",
-        "description": "1\" x 3\" galvanized threaded nipple (1\" nominal pipe size, 3\" length). Confirm threading (NPT) and whether close/standard nipple is required.",
-        "qty": 6,
-        "uom": "EA",
-        "source": "body"
-      },
-      {
-        "raw": "6-1\"x4\",,",
-        "description": "1\" x 4\" galvanized threaded nipple (1\" nominal pipe size, 4\" length — source has extra punctuation). Confirm threading (NPT) and nipple type.",
-        "qty": 6,
-        "uom": "EA",
-        "source": "body"
-      },
-      {
-        "raw": "3-3/4\" bronze ball valve",
-        "description": "3/4\" bronze ball valve. Confirm pressure class (e.g. 125#), end connections (threaded/flanged), and full/part-turn style.",
-        "qty": 3,
-        "uom": "EA",
-        "source": "body"
-      },
-      {
-        "raw": "12-2\"galv coupling",
-        "description": "2\" galvanized coupling (threaded coupling for 2\" pipe). Confirm material/finish and thread spec (NPT).",
-        "qty": 12,
-        "uom": "EA",
-        "source": "body"
-      },
-      {
-        "raw": "2 - 2\" galv union",
-        "description": "2\" galvanized union (threaded). Confirm material/finish and whether union is malleable iron, brass, or other.",
-        "qty": 2,
-        "uom": "EA",
-        "source": "body"
-      },
-      {
-        "raw": "5j+s- 2\"galv pipe",
-        "description": "2\" galvanized pipe — appears to request 5 joints ('jts') but original has '5j+s' (typo). Confirm quantity (joints vs. feet), pipe schedule (if required), and plain ends or threaded.",
-        "qty": 5,
-        "uom": "EA",
-        "source": "body"
-      }
-    ]
+    "review_reason": "Attachment 'IMG_4172.jpeg' could not be read (conversion error). Email body contains no item details—only: \"Here's the list from the yard, need prices today if you can. Pickup Friday.\" Human review / OCR of the image needed to extract items, quantities, and specifications; confirm pickup location/date and any required specs.",
+    "line_items": []
   },
   "E008": {
     "classification": "rfq",
@@ -676,285 +619,17 @@
     "classification": "rfq",
     "revises": null,
     "duplicate_of": null,
-    "needs_review": false,
-    "review_reason": null,
-    "line_items": [
-      {
-        "raw": "EA 1\" WN 150# RF 1 6",
-        "description": "Weld neck flange, 150# raised face (RF), size 1\"",
-        "qty": 6,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 1-1/2\" WN 150# RF 2 4",
-        "description": "Weld neck flange, 150# raised face (RF), size 1-1/2\"",
-        "qty": 4,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 2\" WN 150# RF 3 10",
-        "description": "Weld neck flange, 150# raised face (RF), size 2\"",
-        "qty": 10,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 3* WN 150# RF 4 8",
-        "description": "Weld neck flange, 150# raised face (RF), size 3\"",
-        "qty": 8,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 4\" WN 150# RF 5 12",
-        "description": "Weld neck flange, 150# raised face (RF), size 4\"",
-        "qty": 12,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 6\" WN 150# RF 6 6",
-        "description": "Weld neck flange, 150# raised face (RF), size 6\"",
-        "qty": 6,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 8* WN 150# RF 7 4",
-        "description": "Weld neck flange, 150# raised face (RF), size 8\"",
-        "qty": 4,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "2\" SO 150# RF 8 4",
-        "description": "Slip-on (SO) flange, 150# raised face (RF), size 2\"",
-        "qty": 4,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 3* SO 150# RF 9 4",
-        "description": "Slip-on (SO) flange, 150# raised face (RF), size 3\"",
-        "qty": 4,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 4\" SO 150# RF 10 6",
-        "description": "Slip-on (SO) flange, 150# raised face (RF), size 4\"",
-        "qty": 6,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "6\" SO 150# RF 11 4",
-        "description": "Slip-on (SO) flange, 150# raised face (RF), size 6\"",
-        "qty": 4,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 2\" BL 150# RF 12 2",
-        "description": "Blind flange, 150# raised face (RF), size 2\"",
-        "qty": 2,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 4\" BL 150# RF 13 2",
-        "description": "Blind flange, 150# raised face (RF), size 4\"",
-        "qty": 2,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 6\" BL 150# RF 14 2",
-        "description": "Blind flange, 150# raised face (RF), size 6\"",
-        "qty": 2,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "1\" Spiral wound, 304/graphite, 150# 15 10 EA",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 1\"",
-        "qty": 10,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 1-1/2\" Spiral wound, 304/graphite, 150# 16 6",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 1-1/2\"",
-        "qty": 6,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "2\" Spiral wound, 304/graphite, 150# 17 20 EA",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 2\"",
-        "qty": 20,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "3\" Spiral wound, 304/graphite, 150# 18 12",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 3\"",
-        "qty": 12,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "4\" Spiral wound, 304/graphite, 150# 19 16 EA",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 4\"",
-        "qty": 16,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "6\" Spiral wound, 304/graphite, 150# 20 8 EA",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 6\"",
-        "qty": 8,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "8\" Spiral wound, 304/graphite, 150# 21 4",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 8\"",
-        "qty": 4,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "10\" Spiral wound, 304/graphite, 150# 22 2",
-        "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 10\"",
-        "qty": 2,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "EA 1/2\"× 3 B7 w/ 2 heavy hex nuts 23 32",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 1/2\" × 3\"",
-        "qty": 32,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "5/8* × 3-1/4 B7 w/2 heavy hex nuts 24 24 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 5/8\" × 3-1/4\"",
-        "qty": 24,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "5/8*× 3-1/2 B7 w/ 2 heavy hex nuts 25 16 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 5/8\" × 3-1/2\"",
-        "qty": 16,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "3/4\"x4 B7 w/ 2 heavy hex nuts 26 48 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 3/4\" × 4\"",
-        "qty": 48,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "3/4°× 4-1/4 B7 w/ 2 heavy hex nuts 27 24",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 3/4\" × 4-1/4\"",
-        "qty": 24,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "3/4\"x 4-1/2 B7 w/ 2 heavy hex nuts 28 32 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 3/4\" × 4-1/2\"",
-        "qty": 32,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "7/8*× 5 B7 w/ 2 heavy hex nuts 29 16 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 7/8\" × 5\"",
-        "qty": 16,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "7/8\" × 5-1/4\" B7 w/ 2 heavy hex nuts 30 16 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 7/8\" × 5-1/4\"",
-        "qty": 16,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "1\"×5-3/4° B7 w/ 2 heavy hex nuts 31 16 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 1\" × 5-3/4\"",
-        "qty": 16,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      },
-      {
-        "raw": "1\"x6\" B7 w/ 2 heavy hex nuts 32 8 EA",
-        "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 1\" × 6\"",
-        "qty": 8,
-        "uom": "EA",
-        "source": "Scan_RFQ_SC-4418.pdf"
-      }
-    ]
+    "needs_review": true,
+    "review_reason": "Attachment 'Scan_RFQ_SC-4418.pdf' could not be read (conversion error). Email body contains no item details—only: \"form attached (scanned with my phone). Need prices by Tuesday please.\" Human review / OCR of the attached PDF required to extract line items, quantities, and specifications and to confirm required-by date and any delivery instructions.",
+    "line_items": []
   },
   "E010": {
     "classification": "rfq",
     "revises": null,
     "duplicate_of": null,
-    "needs_review": false,
-    "review_reason": null,
-    "line_items": [
-      {
-        "raw": "40 EA 1/2\"-13 x 2\" hex cap screw, Gr 5 zinc",
-        "description": "Hex head cap screw, 1/2-13 UNC thread, 2\" long, Grade 5, zinc plated",
-        "qty": 40,
-        "uom": "EA",
-        "source": "image002.png"
-      },
-      {
-        "raw": "40 EA 1/2\"-13 hex nut, zinc",
-        "description": "Hex nut, 1/2-13 UNC thread, zinc plated",
-        "qty": 40,
-        "uom": "EA",
-        "source": "image002.png"
-      },
-      {
-        "raw": "200 FT 1-5/8\" strut channel, 12 ga, pre-galv",
-        "description": "Strut channel (Unistrut-style), 1-5/8\" nominal, 12 gauge, pre-galvanized finish, measured in linear feet",
-        "qty": 200,
-        "uom": "FT",
-        "source": "image002.png"
-      },
-      {
-        "raw": "3 BX 1/2\" channel spring nuts, galv",
-        "description": "Channel spring nuts sized for 1/2\" hardware, galvanized finish, packaged in boxes",
-        "qty": 3,
-        "uom": "BX",
-        "source": "image002.png"
-      },
-      {
-        "raw": "24 EA 2\" pipe clamp, galv",
-        "description": "Pipe clamp for 2\" pipe, galvanized finish, individual pieces",
-        "qty": 24,
-        "uom": "EA",
-        "source": "image002.png"
-      },
-      {
-        "raw": "12 EA 3/4\"-10 all-thread rod, 6 ft",
-        "description": "All-thread rod, 3/4\"-10 thread size, 6 ft length, per piece",
-        "qty": 12,
-        "uom": "EA",
-        "source": "image002.png"
-      }
-    ]
+    "needs_review": true,
+    "review_reason": "Attachments image002.png and image001.png could not be read (conversion error). The body only says “Please price everything on this sheet” and contains no item details. Unable to extract line items or required-by/delivery info. Please provide a readable attachment (PDF/Excel) or list the items, quantities, specs, delivery location and required-by date in the message.",
+    "line_items": []
   },
   "E011": {
     "classification": "vendor_quote",
@@ -1095,7 +770,7 @@
     "revises": null,
     "duplicate_of": null,
     "needs_review": true,
-    "review_reason": "BOM attachment 'image001.png' referenced but contents not extracted/parsed from the email. No line-item details available in the message body—need the attached BOM image or a text/CSV/PDF of the BOM to extract items, quantities, and specs. Customer requests pricing by Thursday for Job 2291.",
+    "review_reason": "Attachment 'image001.png' could not be read (conversion error). Message only says \"BOM attached, need pricing by Thursday\" and contains no item details. Please provide a readable BOM (PDF/Excel/CSV) or list items, quantities, specs, delivery location and required-by date in the message.",
     "line_items": []
   },
   "E018": {
@@ -1622,12 +1297,12 @@
     "classification": "rfq",
     "revises": null,
     "duplicate_of": null,
-    "needs_review": false,
-    "review_reason": null,
+    "needs_review": true,
+    "review_reason": "Attachment 'IMG_4417.jpg' could not be read and the email gives no specifications other than \"same as the one in the pic\". Human review/OCR of the image or confirmation from the requester is needed to identify valve size, type, material, trim details, and any part number or drawing before quoting.",
     "line_items": [
       {
-        "raw": "3 of these, same as the one in the pic. HALVORSEN VALVE CO. FORGED STEEL GATE VALVE MODEL: HV-800-FGS SIZE: 2 IN CLASS: 800 LB ENDS: NPT BODY: A105 TRIM: 13CR SER NO: 24-08817",
-        "description": "Halvorsen forged-steel gate valve, Model HV-800-FGS, 2\" size, Class 800 (800 lb), NPT threaded ends, body material ASTM A105, trim material 13Cr (stainless), forged construction. Quote requested for 3 each; same trim as failed unit on dryer line.",
+        "raw": "quote 3 of these, same as the one in the pic. It's the one that failed on the dryer line, need the same trim.",
+        "description": "Pictured valve (no readable specs in email). Customer requests 3 units matching the valve shown in attached image IMG_4417.jpg — specifically the same trim as the failed valve on the dryer line. Size, material, manufacturer, model, pressure rating, end connections, and part number are not provided in the message.",
         "qty": 3,
         "uom": "EA",
         "source": "IMG_4417.jpg"

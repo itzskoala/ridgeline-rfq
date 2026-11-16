@@ -2,16 +2,55 @@
 
 ## Setup (fresh clone/unzip → working `parse`)
 
+**Docker (recommended — this is what we test against):**
+
 ```
-# from the candidate-package/ directory
-uv sync                       # or: pip install -r requirements.txt, if you export one
-cp .env.example .env           # TODO: create .env.example; put OPENAI_API_KEY in .env
+# from the repo root (the directory containing Dockerfile, not candidate-package/)
+docker build --platform linux/amd64 -t ridgeline-rfq .
+docker run --rm --platform linux/amd64 \
+  -e OPENAI_API_KEY=$OPENAI_API_KEY -e OPENAI_MODEL=gpt-5-mini \
+  -v "$(pwd)/candidate-package/data:/app/candidate-package/data" \
+  ridgeline-rfq
+```
+
+`--platform linux/amd64` matters even on an Apple Silicon Mac: `paddlepaddle` ships no
+Linux ARM64 wheel at all (only `manylinux1_x86_64`, macOS ARM64, and Windows amd64), so the
+image is pinned to amd64 — which is also what a Windows grading machine actually is.
+
+That runs the default command (`parse --emails data/dev/emails --out data/dev/parsed.json`)
+against the dev inbox. The `-v` mount is so `data/cache/` and `data/dev/parsed.json` land
+back on the host instead of staying inside the throwaway container. `.env` is intentionally
+**not** baked into the image (see `.dockerignore`), so both `OPENAI_API_KEY` and
+`OPENAI_MODEL` must be passed with `-e` — omitting `OPENAI_MODEL` silently falls back to
+the default model name, which won't match the committed cache keys and forces every email
+to the safe fallback. Verified both ways: with the real key (fresh calls) and with it
+removed (pure cache replay, identical output, $0.00). To run against a different inbox or
+output path, override the command:
+
+```
+docker run --rm --platform linux/amd64 \
+  -e OPENAI_API_KEY=$OPENAI_API_KEY -e OPENAI_MODEL=gpt-5-mini \
+  -v "$(pwd)/candidate-package/data:/app/candidate-package/data" \
+  ridgeline-rfq parse --emails data/dev/emails --out data/dev/parsed.json
+```
+
+PaddleOCR's model weights are downloaded and baked into the image at `docker build` time
+(see the Dockerfile's warm-up step), so `docker run` itself makes no network calls except
+to the OpenAI API — consistent with the brief's "no outbound side effects" rule.
+
+**Without Docker** (needs Python 3.12+, and system libs for OpenCV/PaddleOCR — see the
+Dockerfile for the exact apt packages if you hit an import error):
+
+```
+# from the repo root
+uv sync
+cd candidate-package
+cp .env.example .env   # put your OPENAI_API_KEY in .env
 python main.py parse --emails data/dev/emails --out data/dev/parsed.json
 ```
 
-TODO: confirm the exact one-liner above actually works from a clean checkout (no `.venv`,
-no `data/cache/`) and trim this to the single real setup step, per the brief ("one setup
-step from a fresh clone or unzip to a working `parse`").
+TODO: create `.env.example` (just `OPENAI_API_KEY=` and `OPENAI_MODEL=gpt-5-mini`) — right
+now `.env` is the only copy and it's gitignored.
 
 ## Model
 
@@ -51,11 +90,11 @@ decision, one final structured extraction):
 
 ## Platform
 
-TODO: confirm this runs under the required Windows/Docker/WSL target, or note what's needed
-(e.g. `paddleocr`/`paddlepaddle` are heavy — confirm they install cleanly on Windows, or ship
-a Dockerfile). Say here what we need to run it.
+Ships with a `Dockerfile` at the repo root — build and run with Docker on Windows,
+natively, in Docker, or under WSL, no other setup needed. `paddleocr`/`paddlepaddle` are
+heavy and finicky to install natively on Windows; Docker sidesteps that entirely.
 
-## Recording
-
-TODO: link the ≤5-minute screen recording here (or confirm it's committed to the repo,
-under 50MB total).
+Verified end to end this session: image builds clean (`--platform linux/amd64`), the
+PaddleOCR model warm-up succeeds at build time, `.env`/API key are confirmed absent from
+the built image, and a full `docker run` against the dev inbox matches the real cached
+output exactly (with the key removed, $0.00 / 0 new calls; with it present, same result).

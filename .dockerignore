@@ -1,0 +1,10 @@
+.venv
+.git
+**/.env
+**/.env.*
+!**/.env.example
+**/__pycache__
+**/*.pyc
+candidate-package.zip
+candidate-package/data/dev/attachments
+ai-sessions

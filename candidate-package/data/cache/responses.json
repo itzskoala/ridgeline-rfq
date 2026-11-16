@@ -2051,5 +2051,98 @@
       "estimated_cost": 0.0030823499999999993
     },
     "searched_prior_requests": true
+  },
+  "gpt-5-mini:E007:ba675acc2d1962cde4728a8ac7a2389410b2f7fb297c1530cd3119491b7d428d": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "Attachment 'IMG_4172.jpeg' could not be read (conversion error). Email body contains no item details—only: \"Here's the list from the yard, need prices today if you can. Pickup Friday.\" Human review / OCR of the image needed to extract items, quantities, and specifications; confirm pickup location/date and any required specs.",
+      "line_items": []
+    },
+    "usage": {
+      "prompt_tokens": 13095,
+      "completion_tokens": 907,
+      "total_tokens": 14002,
+      "estimated_cost": 0.0025084499999999997
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E009:0e09749c678163835c82e7ce25044bbe7e830a09abf941d2646636d1cb208340": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "Attachment 'Scan_RFQ_SC-4418.pdf' could not be read (conversion error). Email body contains no item details—only: \"form attached (scanned with my phone). Need prices by Tuesday please.\" Human review / OCR of the attached PDF required to extract line items, quantities, and specifications and to confirm required-by date and any delivery instructions.",
+      "line_items": []
+    },
+    "usage": {
+      "prompt_tokens": 13413,
+      "completion_tokens": 652,
+      "total_tokens": 14065,
+      "estimated_cost": 0.0024031499999999997
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E010:d6bb259b331a8a7f481d28a7d46f9b7820ac4b5d23a9cf337266025cff26f081": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "Attachments image002.png and image001.png could not be read (conversion error). The body only says “Please price everything on this sheet” and contains no item details. Unable to extract line items or required-by/delivery info. Please provide a readable attachment (PDF/Excel) or list the items, quantities, specs, delivery location and required-by date in the message.",
+      "line_items": []
+    },
+    "usage": {
+      "prompt_tokens": 14086,
+      "completion_tokens": 771,
+      "total_tokens": 14857,
+      "estimated_cost": 0.0025754999999999997
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E017:95afb49320819d2d0724febf482c4712fca73ee13a08dd649ea330bd59a76a21": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "Attachment 'image001.png' could not be read (conversion error). Message only says \"BOM attached, need pricing by Thursday\" and contains no item details. Please provide a readable BOM (PDF/Excel/CSV) or list items, quantities, specs, delivery location and required-by date in the message.",
+      "line_items": []
+    },
+    "usage": {
+      "prompt_tokens": 16766,
+      "completion_tokens": 896,
+      "total_tokens": 17662,
+      "estimated_cost": 0.0030524999999999997
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E023:f01a3a4154a190f5f3ea4e41eaedfdd6cb1541c1d96f238d898175cc17403295": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "Attachment 'IMG_4417.jpg' could not be read and the email gives no specifications other than \"same as the one in the pic\". Human review/OCR of the image or confirmation from the requester is needed to identify valve size, type, material, trim details, and any part number or drawing before quoting.",
+      "line_items": [
+        {
+          "raw": "quote 3 of these, same as the one in the pic. It's the one that failed on the dryer line, need the same trim.",
+          "description": "Pictured valve (no readable specs in email). Customer requests 3 units matching the valve shown in attached image IMG_4417.jpg — specifically the same trim as the failed valve on the dryer line. Size, material, manufacturer, model, pressure rating, end connections, and part number are not provided in the message.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "IMG_4417.jpg"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 21201,
+      "completion_tokens": 1353,
+      "total_tokens": 22554,
+      "estimated_cost": 0.00399195
+    },
+    "searched_prior_requests": true
   }
 }

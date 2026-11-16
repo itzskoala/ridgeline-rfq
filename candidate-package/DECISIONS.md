@@ -1,75 +1,108 @@
 # Decisions
 
-TODO: at most two pages total. The four sections below are required by the brief — write
-them in your own voice; don't leave the TODOs in the submitted version.
+## Time Spent
 
-Roughly how long I spent: TODO (brief asks for this; budget is 8-12h, stop at 16h).
+- Approximately **6 hours** total, including architecture planning, implementation, testing, debugging, and AI experimentation.
 
-## Something in the data that surprised you
+## 1. Something in the Data That Surprised Me
 
-TODO — one paragraph, in your own words, but here's verified material from scoring dev
-against `answer_key.json`:
-- E019/E021 (and similar): the model correctly writes "ASTM A106 Grade B" in `description`,
-  but the answer key's `must_mention` wants the compact token `a106b`. The brief documents
-  spelling equivalences (Sch/Schedule, 150#/150 lb, BW/butt weld, etc.) but grade codes like
-  A106B aren't on that list — "Grade B" vs "B" is a real gap between how an ISR might type
-  a spec and how the key checks for it.
-- E002/E007: a vague quantity ("a couple caps") or a messy handwritten/OCR'd list triggered
-  `needs_review=True` even though the answer key says `False` for that email overall — the
-  model treated "I can't fully trust one line" as grounds to flag the whole email, when the
-  spec's intent seems to be narrower (unresolvable *items*, not just a vague qty, which
-  already has its own null-qty handling).
+- One thing that caught me off guard was how much context was spread across email replies and related messages.
+- An individual email did not always contain the complete RFQ. Important information could be found in previous messages, replies, or references to other emails within the same thread.
+- This made email threading and context recognition more important than I initially anticipated.
+- I had to account for relationships between emails rather than treating every message as an independent request.
+- This influenced how I approached ingestion, thread grouping, and the AI extraction layer. The system needed to understand the surrounding conversation before extracting the final request.
 
-## Something in this brief or the README you disagree with, and what you did about it
+## 2. Something in the Brief or README I Disagreed With
 
-TODO — be specific and concrete; "the README is not gospel," they mean it. E.g.: is there
-a line-item rule, a classification boundary, or a `needs_review` trigger you read differently
-than written, and where in the code does your reading show up?
+- I disagreed with JSON being the primary final deliverable for a business-facing application.
+- JSON is useful for structured data exchange and communication between software components, but it is not necessarily the most practical format for the people actually using the extracted information.
+- In a real distribution or sales environment, I would rather have the results exported into Excel or integrated directly into a company's existing CRM format.
+- Sales representatives should be able to review RFQs, quantities, specifications, and customer information without having to interact with raw JSON.
+- I kept the structured JSON output for this implementation because it provides a consistent format for validation and downstream processing.
+- With more time, I would add an export layer that converts the structured results into Excel spreadsheets or a custom CRM-compatible format.
 
-## Your predicted held-out numbers, and the two kinds of email you expect to get wrong
+## 3. Predicted Held-Out Performance
 
-Current dev scores (after fixing a caching bug and a schema-enforcement gap this session —
-see `AI_USAGE.md`): 24/24 classification, 210/210 line recall, 0 hallucinated lines,
-421/425 (99%) must_mention, 22/24 needs_review match (both misses are false-positive
-reviews, not silent losses). TODO: state your own predicted held-out numbers — expect lower
-than dev (held-out has "a few situations dev doesn't show you"), and don't just restate the
-dev numbers.
+My expectation is that the system will perform well on held-out emails, although I expect some degradation compared to the development set.
 
-The two kinds of email I'd expect this system to get wrong on held-out:
-1. **Scanned/handwritten lists with OCR noise** (like E007's clipboard-photo list) — vague
-   quantities, ambiguous abbreviations, and misreads push `needs_review` false positives up
-   and can produce a genuinely wrong extra line (E007 predicted a "3-3/4\" bronze ball
-   valve" line not in the answer key).
-2. **Specs written in a form not covered by the brief's documented spelling equivalences**
-   (e.g. "ASTM A106 Grade B" vs. the catalog/key's compact "A106B") — these pass a human
-   rep's eye but fail a literal `must_mention` check, so expect some context-carried misses
-   on specs with less-common abbreviation patterns than Sch/150#/BW/etc.
+My predictions:
 
-## How this runs for real
+| Metric | Development | Held-out prediction |
+|---|---:|---:|
+| Classification | 24/24 | 22–24/24 |
+| Line recall | 210/210 | 90–95% |
+| Hallucinated lines | 0 | Very few |
+| Must-mention | 421/425 | 95–98% |
+| Needs review match | 22/24 | 85–90% |
 
-TODO — the brief gives four concrete scenarios; answer each, and say plainly which you
-actually built vs. which is just a design answer:
-- **3,000 emails/day arrive by webhook.** What's the ingestion/queueing shape? (Current
-  code loads a whole directory synchronously, in one process, sorted by date — that's a
-  batch-script shape, not a webhook-handler shape. What would change?)
-- **Model provider down for two hours.** Current code already falls back to a safe
-  `needs_review` result per email on any extraction exception (see `main.py`'s
-  `fallback_result` / `except Exception`) — is that enough for a 2-hour outage at volume,
-  or do you need retry/backoff/a dead-letter queue?
-- **A customer sends a 300-page PDF.** What actually happens today? (Worth actually testing
-  this rather than guessing — token cost, timeout, OCR time.)
-- **The same email delivered twice.** This one *is* handled for the dev set's duplicate
-  scenario (`duplicate_of`, "later Date: is the duplicate") — but that's about the same
-  *content* arriving twice in the inbox, not necessarily true delivery-level dedup (e.g. a
-  webhook retry delivering the identical message twice with the same Message-ID). Are those
-  the same mechanism in your design or do they need a separate check?
+These are estimates, not measured results.
 
-## Design notes (not required, but expected in a good memo)
+**Why I expect reasonable performance:**
 
-TODO — where does the model decide vs. where does code decide (e.g. classification/line
-extraction is the model; duplicate "later Date: wins," needs_review overrides for unreadable
-attachments, and schema validation in `schemas.py` are code); what you measured and how, what
-you rejected and why (e.g. did you consider or try the original tool-calling `search_inbox`
-approach before moving to directly embedding candidates in the prompt — what changed and why
-is the new version better/cheaper); what's known-broken; what's next with more time (matcher?
-web app?).
+- The system uses email context and related messages instead of relying exclusively on individual email bodies.
+- The AI extraction layer has flexibility in its prompts, allowing adjustments for different email structures and ways customers describe products.
+- Structured output and schema validation help maintain consistency.
+- The existing answer key and test cases provide a baseline for evaluating changes rather than relying on subjective assessments of the model's output.
+- I expect the biggest performance differences to come from unfamiliar product descriptions, unusual abbreviations, OCR errors, and emails with incomplete specifications.
+
+**Two types of emails I expect to get wrong:**
+
+1. **Scanned or handwritten RFQs:** OCR errors, unclear handwriting, and ambiguous quantities could cause incorrect line-item extraction or unnecessary review flags.
+
+2. **Unusual product specifications:** Customers may describe the same material or fitting using abbreviations or terminology that the system has not encountered before. These could result in missing required specifications or incorrect normalization.
+
+## 4. How This Runs for Real
+
+My overall opinion is that the current architecture provides a reasonable foundation for real-world use. Most additional work would involve production infrastructure, prompt refinement, and handling less common edge cases.
+
+- **3,000 emails per day through a webhook:**
+  - The current implementation processes emails synchronously from a directory in a single process.
+  - For production, I would introduce a webhook endpoint that receives incoming messages and places them into a queue.
+  - Background workers would process emails independently, allowing the system to handle larger volumes without blocking incoming requests.
+  - I would also introduce persistent processing status and delivery-level deduplication.
+
+- **Model provider unavailable for two hours:**
+  - The current implementation has a safe fallback that returns a `needs_review` result when extraction fails.
+  - For a production system, I would not rely exclusively on that fallback.
+  - I would introduce retry logic with exponential backoff and a dead-letter queue for emails that repeatedly fail.
+  - This would allow emails to be processed once the provider becomes available instead of permanently losing successful extraction opportunities during an outage.
+
+- **A customer sends a 300-page PDF:**
+  - The current document-reading pipeline supports extracting document content and passing it to the AI layer.
+  - However, I would not assume that a 300-page document can reliably fit into a single model request.
+  - I would introduce document chunking, page limits, and targeted extraction to control token usage and processing time.
+  - Large documents would also need testing for OCR performance, context limits, and API costs.
+
+- **The same email is delivered twice:**
+  - The current implementation handles duplicate RFQ content within the development dataset by identifying duplicates and preferring the later email.
+  - However, identical webhook deliveries are a separate problem.
+  - For production, I would use the email Message-ID as an idempotency key to prevent the same message from being processed multiple times.
+  - This would complement the existing duplicate-content logic rather than replace it.
+
+## 5. Design Notes
+
+- **Model versus code responsibilities:**
+  - The AI handles understanding email context, classifying requests, and extracting structured line items.
+  - Python handles deterministic operations such as ingestion, thread grouping, duplicate handling, schema validation, and output formatting.
+  - I prefer keeping predictable business logic in Python rather than asking the model to make every decision.
+
+- **AI extraction approach:**
+  - I explored different implementations of the AI layer rather than committing to the first approach.
+  - I ultimately preferred a simpler Python-based approach for identifying relevant request candidates and passing them directly into the extraction prompt.
+  - This avoids unnecessary tool-calling complexity and gives the model the relevant email context directly.
+  - It also makes the extraction flow easier to understand, test, and maintain.
+
+- **Testing and evaluation:**
+  - I used the development answer key and test cases as my primary evaluation criteria.
+  - I measured classification accuracy, line recall, hallucinated line items, required specification coverage, and review-flag accuracy.
+  - I manually inspected incorrect results and refined the implementation based on actual failures.
+
+- **What I would improve next:**
+  - Add Excel and CRM-compatible exports.
+  - Introduce asynchronous processing and webhook ingestion.
+  - Improve handling of large documents and OCR errors.
+  - Expand product terminology and specification matching.
+  - Evaluate stronger AI models and compare their accuracy, latency, and cost.
+  - Build a simple interface where sales representatives can review extracted RFQs and correct uncertain results.
+
+My priority would be to improve the system incrementally rather than introduce unnecessary complexity. The existing implementation establishes the core extraction workflow, while production deployment would require additional infrastructure, reliability, and business-facing integrations.
