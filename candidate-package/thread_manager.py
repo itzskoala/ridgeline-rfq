@@ -1,10 +1,5 @@
 #thread_manager.py
 
-#OH MY GOD! The program needs to be able to tell frq revisions/email treads! we already record email ids so now have 
-#to create threads off of that lol
-
-# message_id, in_reply_to, references, and date
-
 '''
 There are three main signals to use:
 1. In-Reply-To — the strongest direct signal. An email explicitly replies to another email's Message-ID.
