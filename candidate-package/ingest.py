@@ -4,8 +4,7 @@ from email import policy
 from email.parser import BytesParser
 from html.parser import HTMLParser
 
-from document_reader import read_document
-
+from readers import read_document
 
 EMAIL_DIR = Path("data/dev/emails")
 ATTACHMENT_DIR = Path("dev/attachments")

@@ -1,38 +1,45 @@
-#document_reader.py
+from pathlib import Path
 
-def read_document(attachment_path):
-    pass
+from readers.pdf_reader import read_pdf
+from readers.spreadsheet_reader import read_spreadsheet
+from readers.csv_reader import read_csv
+from readers.word_reader import read_word
+from readers.image_reader import read_image
+from readers.html_reader import read_html
+from readers.text_reader import read_text
 
-    #what type of attachment?
-    #what type of pdf, be ready to convert false typings .pdf vs .ppdf 
-    # what libraries can convert tables to md for the ai
-    # how to parse the pdf for the AI? Pypdf? what if it's an image? -> OCR?
 
+def read_document(path):
+    path = Path(path)
+    extension = path.suffix.lower()
 
-    #elif statements
+    if extension == ".pdf":
+        return read_pdf(path)
 
-    '''
-    the problem here is that we have to be able to pull from the type of attachments (important context)
-    What is important context here...? Basically 
-    Convert all text/context -> MD for the AI layer to easily read! then put in pydantic
+    elif extension in [".xlsx", ".xls"]:
+        return read_spreadsheet(path)
 
-    How do we make sure we're not missing anything hmmmmm....Best method to splice from a pdf?
-    pypdf, python also has ocr ...I guess this becomes a question of trusting an LLM with context eng to 
-    view context in a file verus trusting in house python pacakges...
+    elif extension == ".csv":
+        return read_csv(path)
 
-    what can I trust with python packages...pdf -> all pdfs? some pdfs can be images though...
+    elif extension == ".docx":
+        return read_word(path)
 
-    THE KEY:
-    Don't make the LLM responsible for reading every file format. Use Python to extract the contents, normalize them into a consistent format,
-    and then let the LLM interpret that content.
+    elif extension in [".jpg", ".jpeg", ".png", ".tiff", ".tif"]:
+        return read_image(path)
 
-    Let's see how the program can perform with python packages verus handing over whole document to AI when needed...
-    I feel like a combination of the two is the best case.
-    Checking the pages ... hmmm! Maybe have a confidence score for each page! How good is the OCR score...Accuracy / precision 
+    elif extension in [".html", ".htm"]:
+        return read_html(path)
 
-    FIRST steps:
-        grab the attachments via file extensions, in an elif statements handdle 
+    elif extension in [".txt", ".md"]:
+        return read_text(path)
 
-    
-
-    '''
+    else:
+        return {
+            "filename": path.name,
+            "file_type": extension or "unknown",
+            "status": "unsupported",
+            "content": "",
+            "extraction_method": [],
+            "metadata": {}
+        }

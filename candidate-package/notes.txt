@@ -1,0 +1,11 @@
+4:51 PM
+
+Let's have the AI layer done + everything connected! Before final validation layer
+
+
+AI layer steps we will write but simply take in md -> good prompting to conform to pydantic -> Json
+
+Create pydantic, AI layer, 
+
+
+need for jsonl?
