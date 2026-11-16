@@ -49,9 +49,6 @@ cp .env.example .env   # put your OPENAI_API_KEY in .env
 python main.py parse --emails data/dev/emails --out data/dev/parsed.json
 ```
 
-TODO: create `.env.example` (just `OPENAI_API_KEY=` and `OPENAI_MODEL=gpt-5-mini`) — right
-now `.env` is the only copy and it's gitignored.
-
 ## Model
 
 - `OPENAI_MODEL` env var, default `gpt-4.1-mini`. This run uses **gpt-5-mini** (set in `.env`).
