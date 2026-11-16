@@ -1,0 +1,2055 @@
+{
+  "gpt-5-mini:E001:36774de4880175bd3b1052027c3e1b4d26e1c6d77b8e824294c686ced5ff9ca1": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "12 jts - 2\" SCH 40 A53B ERW black pipe, PE",
+          "description": "2\" Schedule 40 ASTM A53B ERW black pipe, plain ends (PE). 12 joints/lengths.",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "(30) 2\" 3000# forged threaded 90 elbow, A105",
+          "description": "2\" 3000# forged threaded 90-degree elbow, ASTM A105 carbon steel, threaded ends.",
+          "qty": 30,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "(30) 2\" 3000# forged threaded coupling, A105",
+          "description": "2\" 3000# forged threaded coupling, ASTM A105 carbon steel, threaded coupling.",
+          "qty": 30,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "200 ft - 3/4\" SCH 40 galvanized pipe, TBE",
+          "description": "3/4\" Schedule 40 galvanized pipe, threaded both ends (TBE), total 200 feet.",
+          "qty": 200,
+          "uom": "FT",
+          "source": "body"
+        },
+        {
+          "raw": "4\" 150# RF slip-on flange, A105 x 6",
+          "description": "4\" 150# raised face (RF) slip-on flange, ASTM A105 carbon steel. Quantity 6.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2928,
+      "completion_tokens": 2705,
+      "total_tokens": 5633,
+      "estimated_cost": 0.0020622
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E002:960f607d04aba8d3659a5de63c6fa0df8d504189739ec120df67e1b2e80e1329": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "Qty for 'a couple caps' is vague (unspecified). Confirm cap quantity and that caps are 1/2\" (implied). Also confirm delivery location and exact required Friday date if needed.",
+      "line_items": [
+        {
+          "raw": "10 of the 1/2 90s",
+          "description": "1/2\" 90-degree threaded elbow, 316 stainless steel.",
+          "qty": 10,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6 tees same size",
+          "description": "1/2\" threaded tee, 316 stainless steel (same size as the 1/2\" items above).",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "a couple caps",
+          "description": "1/2\" threaded cap, 316 stainless steel (quantity not specified—\"a couple\").",
+          "qty": null,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "12 of the 3/4 couplings",
+          "description": "3/4\" threaded coupling, 316 stainless steel.",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "20 of the 3/4 close nipples",
+          "description": "3/4\" close nipple (short threaded nipple), 316 stainless steel.",
+          "qty": 20,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 3078,
+      "completion_tokens": 2524,
+      "total_tokens": 5602,
+      "estimated_cost": 0.0019760999999999997
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E003:ffd84980991ee999c5a09d03315b2004e8228ef90ededcdaf68e5d0e3f1ca1bd": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "1) 20 jts - 2\"",
+          "description": "2\" Schedule 40 ASTM A53B ERW black pipe, threaded & coupled (T&C), joints/lengths.",
+          "qty": 20,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "2) 10 jts - 3\"",
+          "description": "3\" Schedule 40 ASTM A53B ERW black pipe, threaded & coupled (T&C), joints/lengths.",
+          "qty": 10,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "3) 6 jts - 4\"",
+          "description": "4\" Schedule 40 ASTM A53B ERW black pipe, threaded & coupled (T&C), joints/lengths.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "4) 12 ea - 2\" 90 ell",
+          "description": "2\" 90-degree elbow, 150# malleable iron, black.",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "5) 8 ea - 2\" tee",
+          "description": "2\" tee, 150# malleable iron, black.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6) 6 ea - 2\" union",
+          "description": "2\" union, 150# malleable iron, black.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "7) 4 ea - 2\" gate, bronze, 125#",
+          "description": "2\" gate valve, bronze body, 125# pressure class.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "8) 2 ea - 2\" check, swing, bronze, 125#",
+          "description": "2\" swing check valve, bronze body, 125# pressure class.",
+          "qty": 2,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 4008,
+      "completion_tokens": 2579,
+      "total_tokens": 6587,
+      "estimated_cost": 0.0021485999999999996
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E004:8e80074f7cc800f44e2cb29259c3c7ae419efa12aa82ebad5e3942cffcfef810": {
+    "result": {
+      "classification": "rfq_revision",
+      "revises": "E003",
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "1) 20 jts - 2\"",
+          "description": "2\" Schedule 40 ASTM A53B ERW black pipe, threaded & coupled (T&C), joints/lengths.",
+          "qty": 20,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "2) 14 jts - 3\"",
+          "description": "3\" Schedule 40 ASTM A53B ERW black pipe, threaded & coupled (T&C), joints/lengths.",
+          "qty": 14,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "3) 6 jts - 4\"",
+          "description": "4\" Schedule 40 ASTM A53B ERW black pipe, threaded & coupled (T&C), joints/lengths.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "4) 12 ea - 2\" 90 ell",
+          "description": "2\" 90-degree elbow, 150# malleable iron, black.",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "5) 8 ea - 2\" tee",
+          "description": "2\" tee, 150# malleable iron, black.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "7) 4 ea - 2\" gate, bronze, 125#",
+          "description": "2\" gate valve, bronze body, 125# pressure class.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "8) 2 ea - 2\" check, swing, bronze, 125#",
+          "description": "2\" swing check valve, bronze body, 125# pressure class.",
+          "qty": 2,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "9) 4 ea - 2\" ball, bronze, 125#",
+          "description": "2\" ball valve, bronze body, 125# pressure class.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 5403,
+      "completion_tokens": 3370,
+      "total_tokens": 8773,
+      "estimated_cost": 0.00283245
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E005:7ee45e381d9a0300bfdfd170e44affb0705836d414f2d5de70f65dfc1a0cac34": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "1 | 12 | EA | 6\" | 90 LR elbow",
+          "description": "6\" 90° long-radius elbow, butt-weld, ASTM A234 WPB, Schedule 40 (all fittings BW Sch 40 A234 WPB unless noted).",
+          "qty": 12,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        },
+        {
+          "raw": "2 | 6 | EA | 6\" | 45 elbow",
+          "description": "6\" 45° elbow, butt-weld, ASTM A234 WPB, Schedule 40 (per header: BW Sch 40 A234 WPB).",
+          "qty": 6,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        },
+        {
+          "raw": "3 | 4 | EA | 8\" | 90 LR elbow",
+          "description": "8\" 90° long-radius elbow, butt-weld, ASTM A234 WPB, Schedule 40.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        },
+        {
+          "raw": "4 | 4 | EA | 6\" | Tee, straight",
+          "description": "6\" straight tee, butt-weld, ASTM A234 WPB, Schedule 40.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        },
+        {
+          "raw": "5 | 3 | EA | 8\" x 6\" | Reducer, concentric",
+          "description": "8\" x 6\" concentric reducer, butt-weld, ASTM A234 WPB, Schedule 40 (unless otherwise noted).",
+          "qty": 3,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        },
+        {
+          "raw": "6 | 2 | EA | 6\" x 4\" | Reducer, concentric, SCH 80",
+          "description": "6\" x 4\" concentric reducer, butt-weld, ASTM A234 WPB, Schedule 80 (noted SCH 80).",
+          "qty": 2,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        },
+        {
+          "raw": "7 | 2 | EA | 8\" | Cap",
+          "description": "8\" butt-weld cap, ASTM A234 WPB, Schedule 40 (per header).",
+          "qty": 2,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        },
+        {
+          "raw": "8 | 2 | EA | 6\" | Cap",
+          "description": "6\" butt-weld cap, ASTM A234 WPB, Schedule 40 (per header).",
+          "qty": 2,
+          "uom": "EA",
+          "source": "Tank14_Piping_RevB.xlsx"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 6158,
+      "completion_tokens": 2519,
+      "total_tokens": 8677,
+      "estimated_cost": 0.0024351
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E006:f7c0942b88b51b5abbe79f00cfae7e3fc3973138d538035401d198fac60ef21e": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "1 7 EA 1/2\" WELD NECK FLANGE, STD BORE",
+          "description": "1/2\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 7,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "2 3 EA 3/4\" WELD NECK FLANGE, STD BORE",
+          "description": "3/4\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "3 8 EA 1\" WELD NECK FLANGE, STD BORE",
+          "description": "1\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "4 4 EA 1-1/4\" WELD NECK FLANGE, STD BORE",
+          "description": "1-1/4\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "5 9 EA 1-1/2\" WELD NECK FLANGE, STD BORE",
+          "description": "1-1/2\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 9,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "6 5 EA 2\" WELD NECK FLANGE, STD BORE",
+          "description": "2\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 5,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "7 10 EA 2-1/2\" WELD NECK FLANGE, STD BORE",
+          "description": "2-1/2\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 10,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "8 6 EA 3\" WELD NECK FLANGE, STD BORE",
+          "description": "3\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "9 2 EA 4\" WELD NECK FLANGE, STD BORE",
+          "description": "4\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 2,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "10 7 EA 6\" WELD NECK FLANGE, STD BORE",
+          "description": "6\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 7,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "11 3 EA 8\" WELD NECK FLANGE, STD BORE",
+          "description": "8\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "12 8 EA 10\" WELD NECK FLANGE, STD BORE",
+          "description": "10\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "13 4 EA 12\" WELD NECK FLANGE, STD BORE",
+          "description": "12\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "14 9 EA 14\" WELD NECK FLANGE, STD BORE",
+          "description": "14\" weld-neck flange, standard bore, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 9,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "15 5 EA 1/2\" SLIP-ON FLANGE",
+          "description": "1/2\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 5,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "16 10 EA 3/4\" SLIP-ON FLANGE",
+          "description": "3/4\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 10,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "17 6 EA 1\" SLIP-ON FLANGE",
+          "description": "1\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "18 2 EA 1-1/4\" SLIP-ON FLANGE",
+          "description": "1-1/4\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 2,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "19 7 EA 1-1/2\" SLIP-ON FLANGE",
+          "description": "1-1/2\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 7,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "20 3 EA 2\" SLIP-ON FLANGE",
+          "description": "2\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "21 8 EA 2-1/2\" SLIP-ON FLANGE",
+          "description": "2-1/2\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "22 4 EA 3\" SLIP-ON FLANGE",
+          "description": "3\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "23 9 EA 4\" SLIP-ON FLANGE",
+          "description": "4\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 9,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "24 5 EA 6\" SLIP-ON FLANGE",
+          "description": "6\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 5,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "25 10 EA 8\" SLIP-ON FLANGE",
+          "description": "8\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 10,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "26 6 EA 10\" SLIP-ON FLANGE",
+          "description": "10\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "27 2 EA 12\" SLIP-ON FLANGE",
+          "description": "12\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 2,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "28 7 EA 14\" SLIP-ON FLANGE",
+          "description": "14\" slip-on flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 7,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "29 3 EA 1/2\" BLIND FLANGE",
+          "description": "1/2\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "30 8 EA 3/4\" BLIND FLANGE",
+          "description": "3/4\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "31 4 EA 1\" BLIND FLANGE",
+          "description": "1\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "32 9 EA 1-1/4\" BLIND FLANGE",
+          "description": "1-1/4\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 9,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "33 5 EA 1-1/2\" BLIND FLANGE",
+          "description": "1-1/2\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 5,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "34 10 EA 2\" BLIND FLANGE",
+          "description": "2\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 10,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "35 6 EA 2-1/2\" BLIND FLANGE",
+          "description": "2-1/2\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "36 2 EA 3\" BLIND FLANGE",
+          "description": "3\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 2,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "37 7 EA 4\" BLIND FLANGE",
+          "description": "4\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 7,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "38 3 EA 6\" BLIND FLANGE",
+          "description": "6\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "39 8 EA 8\" BLIND FLANGE",
+          "description": "8\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "40 4 EA 10\" BLIND FLANGE",
+          "description": "10\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 4,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "41 9 EA 12\" BLIND FLANGE",
+          "description": "12\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 9,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "42 5 EA 14\" BLIND FLANGE",
+          "description": "14\" blind flange, ASTM A105 carbon steel, 150# RF. Mill test reports required per RFQ.",
+          "qty": 5,
+          "uom": "EA",
+          "source": "RFQ_PF-26-3091.pdf"
+        },
+        {
+          "raw": "2 sets of 4\" 150# spiral wound gaskets, 304 SS/graphite",
+          "description": "4\" spiral-wound gasket for 150# flanges, 304 stainless steel outer/inner windings with graphite filler. Quantity: 2 sets.",
+          "qty": 2,
+          "uom": "SET",
+          "source": "body"
+        },
+        {
+          "raw": "6 sets of 6\" 150# spiral wound gaskets, 304 SS/graphite",
+          "description": "6\" spiral-wound gasket for 150# flanges, 304 stainless steel outer/inner windings with graphite filler. Quantity: 6 sets.",
+          "qty": 6,
+          "uom": "SET",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 11006,
+      "completion_tokens": 6211,
+      "total_tokens": 17217,
+      "estimated_cost": 0.0053774999999999995
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E007:5072771b67f69a59ceb2eb6d919b933fda6a7f28bc763bb2f3c171fb11cfaaa2": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "List contains multiple typos and missing/ambiguous information (unreadable characters, unspecified tee size, ambiguous nipple length formatting, unclear '5j+s' for pipe joints). Attachment IMG_4172.jpeg may contain a clearer copy — confirm sizes, materials, thread type, pipe joint lengths (joints vs. feet), and pickup location/date if different than 'Friday'.",
+      "line_items": [
+        {
+          "raw": "8 - 2\" galv a0 elbow",
+          "description": "2\" galvanized elbow — presumed 90° (source text 'a0' appears to be a typo). Confirm degree (90°), material/finish (galvanized), and pressure rating.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "4-.+tee",
+          "description": "Tee (size and material not specified in line). Confirm size (eg. 2\"), material (galvanized or other), pressure class, and type (equal/reducer).",
+          "qty": 4,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6-1\"x3\"galv nipple",
+          "description": "1\" x 3\" galvanized threaded nipple (1\" nominal pipe size, 3\" length). Confirm threading (NPT) and whether close/standard nipple is required.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6-1\"x4\",,",
+          "description": "1\" x 4\" galvanized threaded nipple (1\" nominal pipe size, 4\" length — source has extra punctuation). Confirm threading (NPT) and nipple type.",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "3-3/4\" bronze ball valve",
+          "description": "3/4\" bronze ball valve. Confirm pressure class (e.g. 125#), end connections (threaded/flanged), and full/part-turn style.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "12-2\"galv coupling",
+          "description": "2\" galvanized coupling (threaded coupling for 2\" pipe). Confirm material/finish and thread spec (NPT).",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "2 - 2\" galv union",
+          "description": "2\" galvanized union (threaded). Confirm material/finish and whether union is malleable iron, brass, or other.",
+          "qty": 2,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "5j+s- 2\"galv pipe",
+          "description": "2\" galvanized pipe — appears to request 5 joints ('jts') but original has '5j+s' (typo). Confirm quantity (joints vs. feet), pipe schedule (if required), and plain ends or threaded.",
+          "qty": 5,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 13137,
+      "completion_tokens": 3292,
+      "total_tokens": 16429,
+      "estimated_cost": 0.00394575
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E008:fd726c4ffd808421bc8bb149b76586b82a1b6d9a0ce33bfa436719534735185b": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": "E006",
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": []
+    },
+    "usage": {
+      "prompt_tokens": 18534,
+      "completion_tokens": 1212,
+      "total_tokens": 19746,
+      "estimated_cost": 0.0035073
+    },
+    "tool_calls": 1
+  },
+  "gpt-5-mini:E009:f4643fb866b3cd90655337a6e862c77be8e70646815f7c011b89f20a67eec9c9": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "EA 1\" WN 150# RF 1 6",
+          "description": "Weld neck flange, 150# raised face (RF), size 1\"",
+          "qty": 6,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 1-1/2\" WN 150# RF 2 4",
+          "description": "Weld neck flange, 150# raised face (RF), size 1-1/2\"",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 2\" WN 150# RF 3 10",
+          "description": "Weld neck flange, 150# raised face (RF), size 2\"",
+          "qty": 10,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 3* WN 150# RF 4 8",
+          "description": "Weld neck flange, 150# raised face (RF), size 3\"",
+          "qty": 8,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 4\" WN 150# RF 5 12",
+          "description": "Weld neck flange, 150# raised face (RF), size 4\"",
+          "qty": 12,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 6\" WN 150# RF 6 6",
+          "description": "Weld neck flange, 150# raised face (RF), size 6\"",
+          "qty": 6,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 8* WN 150# RF 7 4",
+          "description": "Weld neck flange, 150# raised face (RF), size 8\"",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "2\" SO 150# RF 8 4",
+          "description": "Slip-on (SO) flange, 150# raised face (RF), size 2\"",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 3* SO 150# RF 9 4",
+          "description": "Slip-on (SO) flange, 150# raised face (RF), size 3\"",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 4\" SO 150# RF 10 6",
+          "description": "Slip-on (SO) flange, 150# raised face (RF), size 4\"",
+          "qty": 6,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "6\" SO 150# RF 11 4",
+          "description": "Slip-on (SO) flange, 150# raised face (RF), size 6\"",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 2\" BL 150# RF 12 2",
+          "description": "Blind flange, 150# raised face (RF), size 2\"",
+          "qty": 2,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 4\" BL 150# RF 13 2",
+          "description": "Blind flange, 150# raised face (RF), size 4\"",
+          "qty": 2,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 6\" BL 150# RF 14 2",
+          "description": "Blind flange, 150# raised face (RF), size 6\"",
+          "qty": 2,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "1\" Spiral wound, 304/graphite, 150# 15 10 EA",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 1\"",
+          "qty": 10,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 1-1/2\" Spiral wound, 304/graphite, 150# 16 6",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 1-1/2\"",
+          "qty": 6,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "2\" Spiral wound, 304/graphite, 150# 17 20 EA",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 2\"",
+          "qty": 20,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "3\" Spiral wound, 304/graphite, 150# 18 12",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 3\"",
+          "qty": 12,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "4\" Spiral wound, 304/graphite, 150# 19 16 EA",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 4\"",
+          "qty": 16,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "6\" Spiral wound, 304/graphite, 150# 20 8 EA",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 6\"",
+          "qty": 8,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "8\" Spiral wound, 304/graphite, 150# 21 4",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 8\"",
+          "qty": 4,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "10\" Spiral wound, 304/graphite, 150# 22 2",
+          "description": "Spiral-wound gasket, stainless steel 304/graphite filler, 150# rating, size 10\"",
+          "qty": 2,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "EA 1/2\"× 3 B7 w/ 2 heavy hex nuts 23 32",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 1/2\" × 3\"",
+          "qty": 32,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "5/8* × 3-1/4 B7 w/2 heavy hex nuts 24 24 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 5/8\" × 3-1/4\"",
+          "qty": 24,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "5/8*× 3-1/2 B7 w/ 2 heavy hex nuts 25 16 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 5/8\" × 3-1/2\"",
+          "qty": 16,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "3/4\"x4 B7 w/ 2 heavy hex nuts 26 48 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 3/4\" × 4\"",
+          "qty": 48,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "3/4°× 4-1/4 B7 w/ 2 heavy hex nuts 27 24",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 3/4\" × 4-1/4\"",
+          "qty": 24,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "3/4\"x 4-1/2 B7 w/ 2 heavy hex nuts 28 32 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 3/4\" × 4-1/2\"",
+          "qty": 32,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "7/8*× 5 B7 w/ 2 heavy hex nuts 29 16 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 7/8\" × 5\"",
+          "qty": 16,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "7/8\" × 5-1/4\" B7 w/ 2 heavy hex nuts 30 16 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 7/8\" × 5-1/4\"",
+          "qty": 16,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "1\"×5-3/4° B7 w/ 2 heavy hex nuts 31 16 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 1\" × 5-3/4\"",
+          "qty": 16,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        },
+        {
+          "raw": "1\"x6\" B7 w/ 2 heavy hex nuts 32 8 EA",
+          "description": "Stud bolt assembly: B7 stud with 2 heavy hex nuts, size 1\" × 6\"",
+          "qty": 8,
+          "uom": "EA",
+          "source": "Scan_RFQ_SC-4418.pdf"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 11242,
+      "completion_tokens": 5752,
+      "total_tokens": 16994,
+      "estimated_cost": 0.0051375
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E010:a4428b9f5540f9cbdb42eeeab3b2059fb9cfab33d572b8e612f8e2a565aa292b": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "40 EA 1/2\"-13 x 2\" hex cap screw, Gr 5 zinc",
+          "description": "Hex head cap screw, 1/2-13 UNC thread, 2\" long, Grade 5, zinc plated",
+          "qty": 40,
+          "uom": "EA",
+          "source": "image002.png"
+        },
+        {
+          "raw": "40 EA 1/2\"-13 hex nut, zinc",
+          "description": "Hex nut, 1/2-13 UNC thread, zinc plated",
+          "qty": 40,
+          "uom": "EA",
+          "source": "image002.png"
+        },
+        {
+          "raw": "200 FT 1-5/8\" strut channel, 12 ga, pre-galv",
+          "description": "Strut channel (Unistrut-style), 1-5/8\" nominal, 12 gauge, pre-galvanized finish, measured in linear feet",
+          "qty": 200,
+          "uom": "FT",
+          "source": "image002.png"
+        },
+        {
+          "raw": "3 BX 1/2\" channel spring nuts, galv",
+          "description": "Channel spring nuts sized for 1/2\" hardware, galvanized finish, packaged in boxes",
+          "qty": 3,
+          "uom": "BX",
+          "source": "image002.png"
+        },
+        {
+          "raw": "24 EA 2\" pipe clamp, galv",
+          "description": "Pipe clamp for 2\" pipe, galvanized finish, individual pieces",
+          "qty": 24,
+          "uom": "EA",
+          "source": "image002.png"
+        },
+        {
+          "raw": "12 EA 3/4\"-10 all-thread rod, 6 ft",
+          "description": "All-thread rod, 3/4\"-10 thread size, 6 ft length, per piece",
+          "qty": 12,
+          "uom": "EA",
+          "source": "image002.png"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 13630,
+      "completion_tokens": 1466,
+      "total_tokens": 15096,
+      "estimated_cost": 0.0029241
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E011:c1c0d2246baeacd875b0c75e9e2ce4fc5edbf6ff747a43888fb2656e3a869489": {
+    "result": {
+      "classification": "vendor_quote",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "50   2\" 316L SW 3000# 90 elbow, A182 F316L         $11.80       stock",
+          "description": "2\" socket-weld (SW) 3000# 90° elbow, material ASTM A182 F316L (316L stainless). Unit price $11.80, lead time: stock.",
+          "qty": 50,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "40   2\" 316L SW 3000# coupling, A182 F316L         $8.95        stock",
+          "description": "2\" socket-weld (SW) 3000# coupling, material ASTM A182 F316L (316L stainless). Unit price $8.95, lead time: stock.",
+          "qty": 40,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "16   4\" 150# RF slip-on flange, A182 F316L         $64.20       3 wks",
+          "description": "4\" 150# raised-face (RF) slip-on flange, material ASTM A182 F316L (316L stainless). Unit price $64.20, lead time: 3 weeks.",
+          "qty": 16,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "8    2\" 316 SS ball valve, 1000 WOG, threaded      $52.40       2 wks",
+          "description": "2\" threaded 316 stainless steel ball valve, 1000 WOG. Unit price $52.40, lead time: 2 weeks.",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 2168,
+      "completion_tokens": 1318,
+      "total_tokens": 3486,
+      "estimated_cost": 0.001116
+    },
+    "searched_prior_requests": false
+  },
+  "gpt-5-mini:E012:1d3d131a83722c894af12cfcb168512505be61790d9402ed18bb8c4f47ebd9d8": {
+    "result": {
+      "classification": "status_inquiry",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "10 ea - 6\" SCH 40 BW 90 LR elbow, A234 WPB",
+          "description": "6\" Schedule 40 butt-weld 90° long-radius elbow, material ASTM A234 WPB",
+          "qty": 10,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "4 ea - 6\" SCH 40 BW straight tee, A234 WPB",
+          "description": "6\" Schedule 40 butt-weld straight tee, material ASTM A234 WPB",
+          "qty": 4,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6 ea - 6\" 150# RF weld neck flange, A105",
+          "description": "6\" weld-neck flange, 150# rating, raised face (RF), material ASTM A105",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6 ea - 6\" 150# RF blind flange, A105",
+          "description": "6\" blind flange, 150# rating, raised face (RF), material ASTM A105",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "24 ea - 5/8\" x 3-1/2\" B7 stud bolt w/ 2 heavy hex nuts",
+          "description": "Stud bolt assemblies: B7 stud, 5/8\" diameter × 3-1/2\" length, supplied with two heavy hex nuts",
+          "qty": 24,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "12 ea - 6\" 150# spiral wound gasket, 304/graphite",
+          "description": "6\" spiral-wound gasket with 304 stainless steel winding and graphite filler, 150# rating",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "8 jts - 6\" SCH 40 A106B SMLS pipe, PE",
+          "description": "6\" Schedule 40 ASTM A106B seamless pipe, plain ends (per joint)",
+          "qty": 8,
+          "uom": null,
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 14874,
+      "completion_tokens": 2426,
+      "total_tokens": 17300,
+      "estimated_cost": 0.0036867
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E013:7f0a3b72b8e8a525f637837097e64ed3226501a74b0ec8118f4398f00be35cde": {
+    "result": {
+      "classification": "auto_reply",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "12 ea  2\" 800# forged gate valve, A105, NPT",
+          "description": "2\" (2 inch) 800# forged gate valve, material A105, NPT threaded ends",
+          "qty": 12,
+          "uom": "EA",
+          "source": "original_message.eml"
+        },
+        {
+          "raw": "8 ea  2\" 800# forged globe valve, A105, NPT",
+          "description": "2\" (2 inch) 800# forged globe valve, material A105, NPT threaded ends",
+          "qty": 8,
+          "uom": "EA",
+          "source": "original_message.eml"
+        },
+        {
+          "raw": "6 ea  2\" 800# swing check valve, A105, NPT",
+          "description": "2\" (2 inch) 800# swing check valve, material A105, NPT threaded ends",
+          "qty": 6,
+          "uom": "EA",
+          "source": "original_message.eml"
+        },
+        {
+          "raw": "20 ea  2\" 150# slip-on flange, RF, A105",
+          "description": "2\" (2 inch) 150# slip-on (slip-on) flange, raised face (RF), material A105",
+          "qty": 20,
+          "uom": "EA",
+          "source": "original_message.eml"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 1841,
+      "completion_tokens": 1414,
+      "total_tokens": 3255,
+      "estimated_cost": 0.00112455
+    },
+    "searched_prior_requests": false
+  },
+  "gpt-5-mini:E014:c70a82a48f28e4fbae6a0356235785a5524b1306b85e77493dc9018173ef27b3": {
+    "result": {
+      "classification": "other",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "A105 weld neck flange, 150# RF, STD bore   2\"   $16.90 ea",
+          "description": "ASTM A105 carbon steel weld-neck flange, 150# rating, raised face (RF), standard bore, 2 inch nominal size. Price listed per each.",
+          "qty": null,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "A105 weld neck flange, 150# RF, STD bore   4\"   $31.40 ea",
+          "description": "ASTM A105 carbon steel weld-neck flange, 150# rating, raised face (RF), standard bore, 4 inch nominal size. Price listed per each.",
+          "qty": null,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "A105 slip-on flange, 150# RF   3\"   $12.75 ea",
+          "description": "ASTM A105 carbon steel slip-on flange, 150# rating, raised face (RF), 3 inch nominal size. Price listed per each.",
+          "qty": null,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "A105 blind flange, 300# RF   4\"   $44.10 ea",
+          "description": "ASTM A105 carbon steel blind flange, 300# rating, raised face (RF), 4 inch nominal size. Price listed per each.",
+          "qty": null,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "A182 F316L weld neck flange, 150# RF   2\"   $58.00 ea",
+          "description": "ASTM A182 F316L stainless steel weld-neck flange, 150# rating, raised face (RF), 2 inch nominal size. Price listed per each.",
+          "qty": null,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "Spiral wound gasket, 304/graphite, 150#   4\"   $4.85 ea",
+          "description": "Spiral-wound gasket with 304 stainless steel winding and graphite filler, 150# rating, 4 inch nominal size. Price listed per each.",
+          "qty": null,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 1917,
+      "completion_tokens": 1520,
+      "total_tokens": 3437,
+      "estimated_cost": 0.00119955
+    },
+    "searched_prior_requests": false
+  },
+  "gpt-5-mini:E015:9994e9985ae62d078c3ecc4f8717bd14c2f8ea6909a274cc2f43393cc833a4b9": {
+    "result": {
+      "classification": "purchase_order",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "1        210    FT       2\" SCH 80 SMLS A106B pipe, PE, random lengths",
+          "description": "2\" Schedule 80 seamless pipe, ASTM A106 Grade B, plain ends (PE), random lengths",
+          "qty": 210,
+          "uom": "FT",
+          "source": "PO_TPS-88213.pdf"
+        },
+        {
+          "raw": "2        24     EA      2\" 90 deg elbow, LR, BW, SCH 80, A234 WPB",
+          "description": "2\" 90° long-radius elbow, butt-weld (BW), Schedule 80, material A234 WPB",
+          "qty": 24,
+          "uom": "EA",
+          "source": "PO_TPS-88213.pdf"
+        },
+        {
+          "raw": "3        16     EA      2\" WN flange, 300# RF, A105, SCH 80 bore",
+          "description": "2\" weld-neck (WN) flange, 300# rating, raised face (RF), material A105, Schedule 80 bore",
+          "qty": 16,
+          "uom": "EA",
+          "source": "PO_TPS-88213.pdf"
+        },
+        {
+          "raw": "4        16     EA      2\" spiral wound gasket, 316/graphite, 300#, w/ inner ring",
+          "description": "2\" spiral-wound gasket, stainless steel 316 windings with graphite filler, 300# rating, with inner ring",
+          "qty": 16,
+          "uom": "EA",
+          "source": "PO_TPS-88213.pdf"
+        },
+        {
+          "raw": "5        64     EA      Stud bolt B7, 5/8\"-11 x 3-3/4\", w/ 2 heavy hex nuts",
+          "description": "Stud bolt assembly, Grade B7 stud with two heavy hex nuts, size 5/8\"-11 × 3-3/4\"",
+          "qty": 64,
+          "uom": "EA",
+          "source": "PO_TPS-88213.pdf"
+        },
+        {
+          "raw": "6        6      EA      2\" gate valve, 300# RF, A216 WCB, bolted bonnet",
+          "description": "2\" gate valve, 300# raised face (RF) flange ends, body material A216 WCB (carbon steel), bolted bonnet construction",
+          "qty": 6,
+          "uom": "EA",
+          "source": "PO_TPS-88213.pdf"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 15930,
+      "completion_tokens": 2080,
+      "total_tokens": 18010,
+      "estimated_cost": 0.0036374999999999997
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E016:9182d2590844836580d61723c2df45f011eb4edcfce69b4d113a926b29ee5211": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "60 | FT | 1-1/2\" | Pipe, SCH 80, A106B SMLS, PE",
+          "description": "1-1/2\" Schedule 80 seamless pipe, ASTM A106 Grade B, plain ends (PE), measured in linear feet",
+          "qty": 60,
+          "uom": "FT",
+          "source": "HM-7716_material_list.csv"
+        },
+        {
+          "raw": "12 | EA | 1-1/2\" | 90 elbow, SW, 3000#, A105",
+          "description": "1-1/2\" 90° elbow, socket-weld (SW), 3000# rating, material ASTM A105, each",
+          "qty": 12,
+          "uom": "EA",
+          "source": "HM-7716_material_list.csv"
+        },
+        {
+          "raw": "6 | EA | 1-1/2\" | Tee, SW, 3000#, A105",
+          "description": "1-1/2\" tee, socket-weld (SW), 3000# rating, material ASTM A105, each",
+          "qty": 6,
+          "uom": "EA",
+          "source": "HM-7716_material_list.csv"
+        },
+        {
+          "raw": "8 | EA | 1-1/2\" | Union, SW, 3000#, A105",
+          "description": "1-1/2\" union, socket-weld (SW), 3000# rating, material ASTM A105, each",
+          "qty": 8,
+          "uom": "EA",
+          "source": "HM-7716_material_list.csv"
+        },
+        {
+          "raw": "4 | EA | 1-1/2\" | Gate valve, 800#, SW, A105",
+          "description": "1-1/2\" gate valve, 800# rating, socket-weld (SW) ends, body material ASTM A105, each",
+          "qty": 4,
+          "uom": "EA",
+          "source": "HM-7716_material_list.csv"
+        },
+        {
+          "raw": "2 | EA | 1-1/2\" | Y-strainer, 800#, SW, A105",
+          "description": "1-1/2\" Y-strainer, 800# rating, socket-weld (SW) ends, body material ASTM A105, each",
+          "qty": 2,
+          "uom": "EA",
+          "source": "HM-7716_material_list.csv"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 12734,
+      "completion_tokens": 1759,
+      "total_tokens": 14493,
+      "estimated_cost": 0.0029655
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E017:6422a83cfe4f7c7fa7f3e3440e5bdb425ba6b9d7cb8e4596050779c810eafd32": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "BOM attachment 'image001.png' referenced but contents not extracted/parsed from the email. No line-item details available in the message body—need the attached BOM image or a text/CSV/PDF of the BOM to extract items, quantities, and specs. Customer requests pricing by Thursday for Job 2291.",
+      "line_items": []
+    },
+    "usage": {
+      "prompt_tokens": 11505,
+      "completion_tokens": 780,
+      "total_tokens": 12285,
+      "estimated_cost": 0.00219375
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E018:1d9b6dc525d7a80b5179c707caaaef91c9860014805d4613d6d1bb3b132bb379": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "8\nWeld neck flange, 150# RF, A105, STD bore\n4\"",
+          "description": "Weld-neck flange, 150# rating, raised face (RF), material ASTM A105, standard (STD) bore, size 4\"",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "12\n90 deg elbow, LR, BW, SCH 40, A234 WPB\n4\"",
+          "description": "90° long-radius (LR) elbow, butt-weld (BW), Schedule 40, material A234 WPB, size 4\"",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "8\nSpiral wound gasket, 304/graphite, 150#\n4\"",
+          "description": "Spiral-wound gasket with 304 stainless steel windings and graphite filler, 150# rating, size 4\"",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "32\nStud bolt, B7, 4-1/2\" long, w/ 2 heavy hex nuts\n3/4\"",
+          "description": "Stud bolt assembly: Grade B7 stud, 4-1/2\" length, with two heavy hex nuts, size 3/4\"",
+          "qty": 32,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6\nEccentric reducer, BW, SCH 40, A234 WPB\n6\" x 4\"",
+          "description": "Eccentric reducer, butt-weld (BW), Schedule 40, material A234 WPB, size 6\" × 4\"",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "12 rolls\nPTFE thread tape, white, heavy duty\nN/A",
+          "description": "PTFE (white) thread sealant tape, heavy-duty, supplied as rolls",
+          "qty": 12,
+          "uom": "RL",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 16989,
+      "completion_tokens": 1494,
+      "total_tokens": 18483,
+      "estimated_cost": 0.00344475
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E019:4e22e98bedb370e4b7e0c86710f58a53fd1e6afdeb2d8ab2b747067b655088d1": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "10 jts | 2\" | PE",
+          "description": "2\" Schedule 80 seamless carbon steel pipe, ASTM A106 Grade B, plain ends (PE); quantity: 10 joints",
+          "qty": 10,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "6 jts | 3\" | PE",
+          "description": "3\" Schedule 80 seamless carbon steel pipe, ASTM A106 Grade B, plain ends (PE); quantity: 6 joints",
+          "qty": 6,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "4 jts | 4\" | BE",
+          "description": "4\" Schedule 80 seamless carbon steel pipe, ASTM A106 Grade B, beveled ends (BE); quantity: 4 joints",
+          "qty": 4,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "8 jts | 1\" | PE",
+          "description": "1\" Schedule 80 seamless carbon steel pipe, ASTM A106 Grade B, plain ends (PE); quantity: 8 joints",
+          "qty": 8,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "24 | 1\" | 90 elbow",
+          "description": "1\" 90° elbow, socket-weld (SW), 3000# rating, material ASTM A105; quantity: 24 each",
+          "qty": 24,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "12 | 1\" | Tee",
+          "description": "1\" tee, socket-weld (SW), 3000# rating, material ASTM A105; quantity: 12 each",
+          "qty": 12,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "30 | 3/4\" | Coupling, full",
+          "description": "3/4\" full coupling, socket-weld (SW), 3000# rating, material ASTM A105; quantity: 30 each",
+          "qty": 30,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "16 | 1/2\" | Union",
+          "description": "1/2\" union, socket-weld (SW), 3000# rating, material ASTM A105; quantity: 16 each",
+          "qty": 16,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        },
+        {
+          "raw": "20 | 2\" | Half coupling",
+          "description": "2\" half coupling, socket-weld (SW), 3000# rating, material ASTM A105; quantity: 20 each",
+          "qty": 20,
+          "uom": "EA",
+          "source": "TankFarm_Ph2_Materials.docx"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 13539,
+      "completion_tokens": 2492,
+      "total_tokens": 16031,
+      "estimated_cost": 0.00352605
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E020:b5dd948d552d573c67ca6f43fdad78872a156f690e7db9a66e58989654dd0e80": {
+    "result": {
+      "classification": "purchase_order",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "8 EA - 3\" 150# RF weld neck flange, A105, STD bore - $38.60 ea",
+          "description": "3\" weld-neck flange, 150# rating, raised face (RF), material ASTM A105, standard (STD) bore",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "120 FT - 3\" SCH 40 A53B ERW pipe, PE - $7.95/ft",
+          "description": "3\" Schedule 40 pipe, ASTM A53B ERW (electric resistance welded), plain ends (PE), supplied in linear feet",
+          "qty": 120,
+          "uom": "FT",
+          "source": "body"
+        },
+        {
+          "raw": "16 EA - 3\" 90 deg LR elbow, BW, SCH 40, A234 WPB - $9.35 ea",
+          "description": "3\" 90° long-radius (LR) elbow, butt-weld (BW), Schedule 40, material A234 WPB",
+          "qty": 16,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 14715,
+      "completion_tokens": 2118,
+      "total_tokens": 16833,
+      "estimated_cost": 0.00347805
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E021:e8e459450bcc85de1863609bdfe1624b03f63cfae86ed7087394bad3705dbd05": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "1 | 420 | FT | 1/2\" | PE",
+          "description": "1/2\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 420,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "2 | 300 | FT | 3/4\" | PE",
+          "description": "3/4\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 300,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "3 | 600 | FT | 1\" | PE",
+          "description": "1\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 600,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "4 | 240 | FT | 1-1/4\" | PE",
+          "description": "1-1/4\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 240,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "5 | 360 | FT | 1-1/2\" | PE",
+          "description": "1-1/2\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 360,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "6 | 500 | FT | 2\" | PE",
+          "description": "2\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 500,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "7 | 180 | FT | 2-1/2\" | PE",
+          "description": "2-1/2\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 180,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "8 | 320 | FT | 3\" | PE",
+          "description": "3\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 320,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "9 | 140 | FT | 4\" | PE",
+          "description": "4\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 140,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "10 | 80 | FT | 6\" | PE",
+          "description": "6\" Schedule 80 seamless (SMLS) pipe, plain ends (PE); measured in linear feet",
+          "qty": 80,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "11 | 120 | FT | 1/2\" | TOE",
+          "description": "1/2\" Schedule 80 seamless (SMLS) pipe, TOE ends (as listed); measured in linear feet",
+          "qty": 120,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "12 | 160 | FT | 3/4\" | TOE",
+          "description": "3/4\" Schedule 80 seamless (SMLS) pipe, TOE ends (as listed); measured in linear feet",
+          "qty": 160,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "13 | 200 | FT | 1\" | TOE",
+          "description": "1\" Schedule 80 seamless (SMLS) pipe, TOE ends (as listed); measured in linear feet",
+          "qty": 200,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "14 | 100 | FT | 1-1/2\" | TOE",
+          "description": "1-1/2\" Schedule 80 seamless (SMLS) pipe, TOE ends (as listed); measured in linear feet",
+          "qty": 100,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "15 | 140 | FT | 2\" | TOE",
+          "description": "2\" Schedule 80 seamless (SMLS) pipe, TOE ends (as listed); measured in linear feet",
+          "qty": 140,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "16 | 60 | FT | 3\" | BE",
+          "description": "3\" Schedule 80 seamless (SMLS) pipe, beveled ends (BE); measured in linear feet",
+          "qty": 60,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "17 | 40 | FT | 4\" | BE",
+          "description": "4\" Schedule 80 seamless (SMLS) pipe, beveled ends (BE); measured in linear feet",
+          "qty": 40,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "18 | 20 | FT | 6\" | BE",
+          "description": "6\" Schedule 80 seamless (SMLS) pipe, beveled ends (BE); measured in linear feet",
+          "qty": 20,
+          "uom": "FT",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "1 | 9 | EA | 1/2\" | 90 Elbow",
+          "description": "1/2\" 90° elbow, socket-weld (SW), 3000# (as header 'SW 3000#'); quantity each",
+          "qty": 9,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "2 | 16 | EA | 3/4\" | 90 Elbow",
+          "description": "3/4\" 90° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 16,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "3 | 23 | EA | 1\" | 90 Elbow",
+          "description": "1\" 90° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 23,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "4 | 30 | EA | 1-1/4\" | 90 Elbow",
+          "description": "1-1/4\" 90° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 30,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "5 | 6 | EA | 1-1/2\" | 90 Elbow",
+          "description": "1-1/2\" 90° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 6,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "6 | 13 | EA | 2\" | 90 Elbow",
+          "description": "2\" 90° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 13,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "7 | 20 | EA | 1/2\" | 45 Elbow",
+          "description": "1/2\" 45° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 20,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "8 | 27 | EA | 3/4\" | 45 Elbow",
+          "description": "3/4\" 45° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 27,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "9 | 34 | EA | 1\" | 45 Elbow",
+          "description": "1\" 45° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 34,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "10 | 10 | EA | 1-1/4\" | 45 Elbow",
+          "description": "1-1/4\" 45° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 10,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "11 | 17 | EA | 1-1/2\" | 45 Elbow",
+          "description": "1-1/2\" 45° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 17,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "12 | 24 | EA | 2\" | 45 Elbow",
+          "description": "2\" 45° elbow, socket-weld (SW), 3000#; quantity each",
+          "qty": 24,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "13 | 31 | EA | 1/2\" | Tee",
+          "description": "1/2\" tee, socket-weld (SW), 3000#; quantity each",
+          "qty": 31,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "14 | 7 | EA | 3/4\" | Tee",
+          "description": "3/4\" tee, socket-weld (SW), 3000#; quantity each",
+          "qty": 7,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "15 | 14 | EA | 1\" | Tee",
+          "description": "1\" tee, socket-weld (SW), 3000#; quantity each",
+          "qty": 14,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "16 | 21 | EA | 1-1/4\" | Tee",
+          "description": "1-1/4\" tee, socket-weld (SW), 3000#; quantity each",
+          "qty": 21,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "17 | 28 | EA | 1-1/2\" | Tee",
+          "description": "1-1/2\" tee, socket-weld (SW), 3000#; quantity each",
+          "qty": 28,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "18 | 35 | EA | 2\" | Tee",
+          "description": "2\" tee, socket-weld (SW), 3000#; quantity each",
+          "qty": 35,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "19 | 11 | EA | 1/2\" | Coupling",
+          "description": "1/2\" coupling, socket-weld (SW), 3000#; quantity each",
+          "qty": 11,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "20 | 18 | EA | 3/4\" | Coupling",
+          "description": "3/4\" coupling, socket-weld (SW), 3000#; quantity each",
+          "qty": 18,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "21 | 25 | EA | 1\" | Coupling",
+          "description": "1\" coupling, socket-weld (SW), 3000#; quantity each",
+          "qty": 25,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "22 | 32 | EA | 1-1/4\" | Coupling",
+          "description": "1-1/4\" coupling, socket-weld (SW), 3000#; quantity each",
+          "qty": 32,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "23 | 8 | EA | 1-1/2\" | Coupling",
+          "description": "1-1/2\" coupling, socket-weld (SW), 3000#; quantity each",
+          "qty": 8,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "24 | 15 | EA | 2\" | Coupling",
+          "description": "2\" coupling, socket-weld (SW), 3000#; quantity each",
+          "qty": 15,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "25 | 22 | EA | 1/2\" | Cap",
+          "description": "1/2\" cap, socket-weld (SW), 3000#; quantity each",
+          "qty": 22,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "26 | 29 | EA | 3/4\" | Cap",
+          "description": "3/4\" cap, socket-weld (SW), 3000#; quantity each",
+          "qty": 29,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "27 | 36 | EA | 1\" | Cap",
+          "description": "1\" cap, socket-weld (SW), 3000#; quantity each",
+          "qty": 36,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "28 | 12 | EA | 1-1/4\" | Cap",
+          "description": "1-1/4\" cap, socket-weld (SW), 3000#; quantity each",
+          "qty": 12,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "29 | 19 | EA | 1-1/2\" | Cap",
+          "description": "1-1/2\" cap, socket-weld (SW), 3000#; quantity each",
+          "qty": 19,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "30 | 26 | EA | 2\" | Cap",
+          "description": "2\" cap, socket-weld (SW), 3000#; quantity each",
+          "qty": 26,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "31 | 33 | EA | 1/2\" | Union",
+          "description": "1/2\" union, socket-weld (SW), 3000#; quantity each",
+          "qty": 33,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        },
+        {
+          "raw": "32 | 9 | EA | 3/4\" | Union",
+          "description": "3/4\" union, socket-weld (SW), 3000#; quantity each",
+          "qty": 9,
+          "uom": "EA",
+          "source": "SR-4-117_Unit4_BOM.xlsx"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 12222,
+      "completion_tokens": 5558,
+      "total_tokens": 17780,
+      "estimated_cost": 0.0051681
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E022:ca9eca89109a5ae1cc2980c21c66469024bcafe44e92d1e05809a17d8d00f122": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": true,
+      "review_reason": "Attached RFQ (AldenMarine_RFQ_AM-26-0412.pdf) is password-protected and extraction failed; no line items readable from the email body. Password expected in a separate email — cannot extract BOM/quantities until attachment is accessible.",
+      "line_items": []
+    },
+    "usage": {
+      "prompt_tokens": 22395,
+      "completion_tokens": 830,
+      "total_tokens": 23225,
+      "estimated_cost": 0.0038572500000000004
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E023:29757012aecb93ff83ae59819b3fdaf492c5d25b3854f043f62578f7320903f7": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "3 of these, same as the one in the pic. HALVORSEN VALVE CO. FORGED STEEL GATE VALVE MODEL: HV-800-FGS SIZE: 2 IN CLASS: 800 LB ENDS: NPT BODY: A105 TRIM: 13CR SER NO: 24-08817",
+          "description": "Halvorsen forged-steel gate valve, Model HV-800-FGS, 2\" size, Class 800 (800 lb), NPT threaded ends, body material ASTM A105, trim material 13Cr (stainless), forged construction. Quote requested for 3 each; same trim as failed unit on dryer line.",
+          "qty": 3,
+          "uom": "EA",
+          "source": "IMG_4417.jpg"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 17093,
+      "completion_tokens": 1683,
+      "total_tokens": 18776,
+      "estimated_cost": 0.0035737499999999997
+    },
+    "searched_prior_requests": true
+  },
+  "gpt-5-mini:E024:a86b64829cb5ba280728b80f2ad93d9f7eabd6d26b21e292a395d3c84b079b40": {
+    "result": {
+      "classification": "rfq",
+      "revises": null,
+      "duplicate_of": null,
+      "needs_review": false,
+      "review_reason": null,
+      "line_items": [
+        {
+          "raw": "10   90° elbow   1/2″",
+          "description": "90° elbow, 1/2\"; 316 stainless steel, threaded, 3000# rating",
+          "qty": 10,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6   45° elbow   1/2″",
+          "description": "45° elbow, 1/2\"; 316 stainless steel, threaded, 3000# rating",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "8   Tee   3/4″",
+          "description": "Tee, 3/4\"; 316 stainless steel, threaded, 3000# rating",
+          "qty": 8,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "12   Coupling, full   1/2″",
+          "description": "Full coupling, 1/2\"; 316 stainless steel, threaded, 3000# rating",
+          "qty": 12,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "4   Union   1/2″",
+          "description": "Union, 1/2\"; 316 stainless steel, threaded, 3000# rating",
+          "qty": 4,
+          "uom": "EA",
+          "source": "body"
+        },
+        {
+          "raw": "6   Hex head plug   3/4″",
+          "description": "Hex head plug, 3/4\"; 316 stainless steel, threaded, 3000# rating",
+          "qty": 6,
+          "uom": "EA",
+          "source": "body"
+        }
+      ]
+    },
+    "usage": {
+      "prompt_tokens": 15377,
+      "completion_tokens": 1293,
+      "total_tokens": 16670,
+      "estimated_cost": 0.0030823499999999993
+    },
+    "searched_prior_requests": true
+  }
+}
